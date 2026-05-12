@@ -1,4 +1,4 @@
-#Módulo Cliente - Sistema CSR
+#Módulo Cliente - Sistema CSR _ Yenifer Gonzalez
 from abc import ABC, abstractmethod  # Para clases y métodos abstractos
 import re                            # Para validaciones con expresiones regulares
 from exceptions import (

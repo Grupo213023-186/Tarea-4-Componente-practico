@@ -1,10 +1,4 @@
-"""
-=============================================================
-  Vista Servicios - Sistema CSR
-  Formulario con pestañas para los tres tipos de servicios
-  y tabla de servicios registrados
-=============================================================
-"""
+#Vista Servicios - Sistema CSR
 
 import tkinter as tk
 from tkinter import ttk, messagebox
@@ -151,7 +145,7 @@ class VistaServicios:
             self._formulario_asesoria()
 
     def _crear_entry(self, padre, etiqueta: str, clave: str,
-                     fila: int, columna: int, placeholder: str = ""):
+                    fila: int, columna: int, placeholder: str = ""):
         """
         Crea un campo de entrada reutilizable para los formularios.
         
@@ -207,7 +201,7 @@ class VistaServicios:
         entry.bind("<FocusOut>", al_desenfocar)
 
     def _crear_check(self, padre, etiqueta: str, clave: str,
-                     fila: int, columna: int) -> tk.BooleanVar:
+                    fila: int, columna: int) -> tk.BooleanVar:
         """
         Crea un campo de tipo checkbox.
         
@@ -340,26 +334,26 @@ class VistaServicios:
 
         # Selectores de área y nivel
         tk.Label(interno, text="Área *", font=("Verdana", 9, "bold"),
-                 fg=COLORES["texto"], bg=COLORES["fondo"]
-                 ).grid(row=2, column=2, sticky="w", pady=(8, 2), padx=(0, 20))
+                fg=COLORES["texto"], bg=COLORES["fondo"]
+                ).grid(row=2, column=2, sticky="w", pady=(8, 2), padx=(0, 20))
 
         areas = ["tecnologia", "software", "bases_de_datos", "redes",
-                 "ciberseguridad", "gestion_proyectos", "cloud", "ia"]
+                "ciberseguridad", "gestion_proyectos", "cloud", "ia"]
         var_area = tk.StringVar(value="tecnologia")
         self.campos["area"] = var_area
         combo_area = ttk.Combobox(interno, textvariable=var_area, values=areas,
-                                  font=("Verdana", 10), state="readonly", width=26)
+                                font=("Verdana", 10), state="readonly", width=26)
         combo_area.grid(row=3, column=2, sticky="ew", padx=(0, 20))
 
         tk.Label(interno, text="Nivel del Asesor *", font=("Verdana", 9, "bold"),
-                 fg=COLORES["texto"], bg=COLORES["fondo"]
-                 ).grid(row=4, column=0, sticky="w", pady=(8, 2))
+                fg=COLORES["texto"], bg=COLORES["fondo"]
+                ).grid(row=4, column=0, sticky="w", pady=(8, 2))
 
         var_nivel = tk.StringVar(value="junior")
         self.campos["nivel_experto"] = var_nivel
         combo_nivel = ttk.Combobox(interno, textvariable=var_nivel,
-                                   values=["junior", "senior", "experto"],
-                                   font=("Verdana", 10), state="readonly", width=26)
+                                values=["junior", "senior", "experto"],
+                                font=("Verdana", 10), state="readonly", width=26)
         combo_nivel.grid(row=5, column=0, sticky="ew", padx=(0, 20))
 
         interno.columnconfigure(0, weight=1)

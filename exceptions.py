@@ -1,4 +1,4 @@
-
+#Módulo de Excepciones Personalizadas - Sistema CSR
 class CSRBaseException(Exception):
     """Excepción base del sistema CSR. Todas las excepciones heredan de esta."""
 

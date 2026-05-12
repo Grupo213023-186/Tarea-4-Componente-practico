@@ -1,6 +1,18 @@
 #Vista Inicio - Sistema CSR
 
+import tkinter as tk
 
+# Colores del sistema
+COLORES = {
+    "fondo":        "#FFFFFF",
+    "texto":        "#1A1A1A",
+    "acento":       "#6B4C3B",
+    "acento_claro": "#C4956A",
+    "separador":    "#E0D5CC",
+    "sidebar":      "#F8F5F2",
+    "titulo_bg":    "#1A1A1A",
+    "fila_alt":     "#F5F0EB",
+}
 
 
 class VistaInicio:
