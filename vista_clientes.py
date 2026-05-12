@@ -1,9 +1,4 @@
-"""
-=============================================================
-  Vista Clientes - Sistema CSR
-  Formulario y tabla para gestionar clientes
-=============================================================
-"""
+#Vista Clientes - Sistema CSR
 
 import tkinter as tk
 from tkinter import messagebox
