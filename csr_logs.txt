@@ -172,3 +172,18 @@
 [EVENTO] 2026-05-10 01:28:29 - Reserva creada: RES-0001 | Cliente: Ana María López | Servicio: Sala Innovación | Costo: $535,500.00
 [EVENTO] 2026-05-10 01:28:29 - Reserva creada: RES-0002 | Cliente: Carlos Rodríguez | Servicio: Consultoría Cloud AWS | Costo: $952,000.00
 [EVENTO] 2026-05-10 01:28:29 - === Datos de demostración cargados exitosamente ===
+
+--- Nueva sesión: 2026-05-10 01:36:43 ---
+[EVENTO] 2026-05-10 01:36:43 - Sistema CSR iniciado correctamente.
+[EVENTO] 2026-05-10 01:36:43 - === Iniciando carga de datos de demostración ===
+[EVENTO] 2026-05-10 01:36:43 - Cliente registrado: Ana María López [CLI-0001]
+[EVENTO] 2026-05-10 01:36:43 - Cliente registrado: Carlos Rodríguez [CLI-0002]
+[ERROR]  2026-05-10 01:36:43 - Datos inválidos al registrar cliente | Excepción: ClienteInvalidoError: [CSR-101] Email inválido: 'email_sin_arroba'. Use formato usuario@dominio.com
+[EVENTO] 2026-05-10 01:36:43 - Cliente registrado: Laura Gómez [CLI-0003]
+[EVENTO] 2026-05-10 01:36:43 - Servicio creado: Sala Innovación [SRV-0001]
+[ERROR]  2026-05-10 01:36:43 - Error al crear servicio | Excepción: ServicioNoDisponibleError: [CSR-201] Tipo de equipo inválido: 'dron'. Tipos válidos: laptop, proyector, camara, impresora, tablet, servidor
+[EVENTO] 2026-05-10 01:36:43 - Servicio creado: Consultoría Cloud AWS [SRV-0002]
+[EVENTO] 2026-05-10 01:36:43 - Servicio creado: Laptop Dell XPS [SRV-0003]
+[EVENTO] 2026-05-10 01:36:43 - Reserva creada: RES-0001 | Cliente: Ana María López | Servicio: Sala Innovación | Costo: $535,500.00
+[EVENTO] 2026-05-10 01:36:43 - Reserva creada: RES-0002 | Cliente: Carlos Rodríguez | Servicio: Consultoría Cloud AWS | Costo: $952,000.00
+[EVENTO] 2026-05-10 01:36:43 - === Datos de demostración cargados exitosamente ===

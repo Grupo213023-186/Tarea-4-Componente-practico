@@ -1,9 +1,4 @@
-"""
-=============================================================
-  Vista Reservas - Sistema CSR
-  Creación y gestión de reservas con cálculo de costos
-=============================================================
-"""
+#Vista Reservas - Sistema CSR
 
 import tkinter as tk
 from tkinter import ttk, messagebox
@@ -104,8 +99,8 @@ class VistaReservas:
 
         # Etiqueta y selector de Cliente
         tk.Label(interno, text="Cliente *", font=("Verdana", 9, "bold"),
-                 fg=COLORES["texto"], bg=COLORES["fondo"]
-                 ).grid(row=0, column=0, sticky="w", pady=(0, 2))
+                fg=COLORES["texto"], bg=COLORES["fondo"]
+                ).grid(row=0, column=0, sticky="w", pady=(0, 2))
 
         self.combo_clientes = ttk.Combobox(
             interno, textvariable=self.var_cliente,
@@ -115,8 +110,8 @@ class VistaReservas:
 
         # Etiqueta y selector de Servicio
         tk.Label(interno, text="Servicio *", font=("Verdana", 9, "bold"),
-                 fg=COLORES["texto"], bg=COLORES["fondo"]
-                 ).grid(row=0, column=2, sticky="w", pady=(0, 2))
+                fg=COLORES["texto"], bg=COLORES["fondo"]
+                ).grid(row=0, column=2, sticky="w", pady=(0, 2))
 
         self.combo_servicios = ttk.Combobox(
             interno, textvariable=self.var_servicio,
@@ -127,8 +122,8 @@ class VistaReservas:
         # ---- Fila 2: Duración y Parámetro Extra ----
 
         tk.Label(interno, text="Duración (horas) *", font=("Verdana", 9, "bold"),
-                 fg=COLORES["texto"], bg=COLORES["fondo"]
-                 ).grid(row=2, column=0, sticky="w", pady=(10, 2))
+                fg=COLORES["texto"], bg=COLORES["fondo"]
+                ).grid(row=2, column=0, sticky="w", pady=(10, 2))
 
         entry_duracion = tk.Entry(
             interno, textvariable=self.var_duracion,
@@ -154,9 +149,9 @@ class VistaReservas:
 
         # Parámetro extra (personas, cantidad, sesiones)
         tk.Label(interno, text="Parámetro Extra (personas / cantidad / sesiones)",
-                 font=("Verdana", 9, "bold"),
-                 fg=COLORES["texto"], bg=COLORES["fondo"]
-                 ).grid(row=2, column=2, sticky="w", pady=(10, 2))
+                font=("Verdana", 9, "bold"),
+                fg=COLORES["texto"], bg=COLORES["fondo"]
+                ).grid(row=2, column=2, sticky="w", pady=(10, 2))
 
         entry_extra = tk.Entry(
             interno, textvariable=self.var_param_extra,
