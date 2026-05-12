@@ -1,23 +1,6 @@
-"""
-=============================================================
-  Vista Inicio - Sistema CSR
-  Dashboard principal con estadísticas y bienvenida
-=============================================================
-"""
+#Vista Inicio - Sistema CSR
 
-import tkinter as tk
 
-# Colores del sistema
-COLORES = {
-    "fondo":        "#FFFFFF",
-    "texto":        "#1A1A1A",
-    "acento":       "#6B4C3B",
-    "acento_claro": "#C4956A",
-    "separador":    "#E0D5CC",
-    "sidebar":      "#F8F5F2",
-    "titulo_bg":    "#1A1A1A",
-    "fila_alt":     "#F5F0EB",
-}
 
 
 class VistaInicio:
@@ -142,13 +125,13 @@ class VistaInicio:
         # Definición de las tarjetas de métricas
         metricas = [
             ("Clientes", str(stats.get("total_clientes", 0)),
-             f"Activos: {stats.get('clientes_activos', 0)}", COLORES["texto"]),
+            f"Activos: {stats.get('clientes_activos', 0)}", COLORES["texto"]),
             ("Servicios", str(stats.get("total_servicios", 0)),
-             f"Disponibles: {stats.get('servicios_disponibles', 0)}", COLORES["acento"]),
+            f"Disponibles: {stats.get('servicios_disponibles', 0)}", COLORES["acento"]),
             ("Reservas", str(stats.get("total_reservas", 0)),
-             f"Confirmadas: {stats.get('confirmadas', 0)}", COLORES["texto"]),
+            f"Confirmadas: {stats.get('confirmadas', 0)}", COLORES["texto"]),
             ("Ingresos", f"${stats.get('ingresos_totales', 0):,.0f}",
-             "Reservas activas", COLORES["acento"]),
+            "Reservas activas", COLORES["acento"]),
         ]
 
         # Crear cada tarjeta de métrica
